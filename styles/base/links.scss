@@ -1,0 +1,7 @@
+a {
+  transition: $default-transition;
+
+  &:hover {
+    color: $color-secondary--dark;
+  }
+}
