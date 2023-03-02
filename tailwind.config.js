@@ -8,4 +8,14 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  languages: [
+    "html",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "php",
+    "svelte"
+  ],
 }
