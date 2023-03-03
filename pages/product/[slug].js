@@ -9,6 +9,7 @@ import React, { useContext } from 'react'
 export default function ProductScreen() {
   const {state, dispatch} = useContext(Store)
 
+  const router = useRouter()
   const {query} = useRouter()
   const {slug} = query
   const product = data.products.find(x => x.slug === slug)
@@ -20,8 +21,7 @@ export default function ProductScreen() {
   const addToCartHandler = () => {
     const existItem = state.cart.cartItems.find((item) => item.slug === product.slug)
     const quantity = existItem ? existItem.quantity + 1 : 1
-    const obj = {type: 'CART_ADD_ITEM', payload: {...product, quantity}}
-    dispatch(obj)
+    dispatch({type: 'CART_ADD_ITEM', payload: {...product, quantity}})
   }
 
   return (
