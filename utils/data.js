@@ -14,7 +14,7 @@ const data = {
     },
     {
       name: 'Free Shirt 1',
-      slug: 'free-shirt',
+      slug: 'free-shirt1',
       category: 'Shirts',
       image: '/images/shirt2.jpg',
       price: 50,
@@ -26,7 +26,7 @@ const data = {
     },
     {
       name: 'Free Shirt 2',
-      slug: 'free-shirt',
+      slug: 'free-shirt2',
       category: 'Shirts',
       image: '/images/shirt3.jpg',
       price: 20,

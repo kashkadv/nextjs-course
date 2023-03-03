@@ -1,0 +1,13 @@
+.button {
+  padding: 8px 16px;
+
+  &--primary {
+    background-color: $color-secondary;
+    color: $color-primary;
+    transition: $default-transition;
+
+    &:hover {
+      background-color: $color-secondary--dark;
+    }
+  }
+}
